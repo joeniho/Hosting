@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h3>
+        The REPO
+        <a href="" target="_blank"
+          >Link...</a
+        >
+      </h3>
+      <div class="formContainer">
+        <h2 class="formHeader">Sign Up!</h2>
+        <form action="database.json" method="post">
+            <div>
+                <label for="fname">First name:</label><br>
+                <input class="field" type="text" maxlength="10" minlength="1" onkeydown="return /[a-zA-Z]/i.test(event.key)" required><br>
+
+                <label for="lname">Last name:</label><br>
+                <input class="field" type="text" maxlength="10" minlength="1" onkeydown="return /[a-zA-Z]/i.test(event.key)" required><br>
+
+                <label for="Oname">Other name:</label><br>
+                <input class="field" type="text" maxlength="10" minlength="1" onkeydown="return /[a-zA-Z]/i.test(event.key)"><br>
+
+                <label for="Email">Email:</label><br>
+                <input class="field" type="email" id="email"><br>
+
+                <label for="pnumber">Phone-Number:</label><br>
+                <input class="field" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Other</option>
+                </select><br>
+            </div>
+            <br>
+            <div>
+                <button class="Sign-up">Sign-up</button>
+            </div>
+        </form>
+        </div>
+        <script src = "database.json">
+           
+  
+        </script>
+</body>
+</html>
